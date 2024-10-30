@@ -70,7 +70,9 @@ h4 {
     width: 25%;
     border-radius: 12px;
   }
-  p {
+}
+
+.modal-content p {
     font-family: "Pathway Gothic One";
     padding: 5px;
     font-size: 1.5rem;
@@ -80,7 +82,6 @@ h4 {
     text-align: justify;
     color: #feda4a;
   }
-}
 
 .hidden {
   display: none;
