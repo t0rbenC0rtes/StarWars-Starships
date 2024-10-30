@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>StarWars Starships</h1>
+      <h4>Clic a starship to open details</h4>
+      <div class="starShips">
+        <img
+          src="img/ships/C90_Corvette.png"
+          alt="CR90 Corvette"
+          class="shipImg"
+          id="cr90"
+        />
+        <img
+          src="img/ships/Star_Destroyer.png"
+          alt="Star Star_Destroyer"
+          class="shipImg"
+          id="stardestroyer"
+        />
+        <img
+          src="img/ships/Sentinel.png"
+          alt="Sentinel"
+          class="shipImg"
+          id="sentinel"
+        />
+        <img
+          src="img/ships/death_star.png"
+          alt="Death Star"
+          class="shipImg"
+          id="deathstar"
+        />
+        <img
+          src="img/ships/Millenium_Falcon.png"
+          alt="Millenium Falcon"
+          class="shipImg"
+          id="millenium"
+        />
+        <img
+          src="img/ships/Y-Wing.png"
+          alt="Y Wing"
+          class="shipImg"
+          id="ywing"
+        />
+        <img
+          src="img/ships/X-Wing.png"
+          alt="X Wing"
+          class="shipImg"
+          id="xwing"
+        />
+        <img
+          src="img/ships/TIEfighter.png"
+          alt="Tie Fighter"
+          class="shipImg"
+          id="tiefighter"
+        />
+        <img
+          src="img/ships/Executor.png"
+          alt="Executor"
+          class="shipImg"
+          id="executor"
+        />
+        <img
+          src="img/ships/Rebel_transport.png"
+          alt="Rebel transport"
+          class="shipImg"
+          id="rebel"
+        />
+      </div>
+      <!-- Modal -->
+      <div id="ship-modal" class="modal hidden crawl">
+        <div class="modal-content">
+          <p id="name"></p>
+          <p id="model"></p>
+          <p id="manufacturer"></p>
+          <p id="cost"></p>
+          <p id="crew"></p>
+          <p id="speed"></p>
+        </div>
+      </div>
+      <footer>
+        <p class="credits">Coded by Antoine Lafontaine, my very first API !</p>
+        <p class="credits">
+          All data from <a href="https://swapi.dev/">swapi.dev</a> API
+        </p>
+      </footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "StarWars";
+  src: url(SF\ Distant\ Galaxy.ttf);
+}
+
+body {
+  background-color: #000;
+  font-family: "StarWars";
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  color: #feda4a;
+  margin-top: 2rem;
+}
+
+h4 {
+    color: #feda4a;
+    font-weight: 400;
+}
+
+.starShips {
+    margin-bottom: 5rem;
+}
+
+.shipImg {
+  padding: 1rem;
+  width: 12.5rem;
+  transition: 0.3s ease;
+  &:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow-y: auto;
+}
+
+.modal-content {
+  position: relative;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  width: 80%;
+  max-width: 31.25rem;
+  margin-top: 3.125rem;
+  border-radius: 12px;
+  border: 1px ridge #feda4a;
+  img {
+    width: 25%;
+    border-radius: 12px;
+  }
+  p {
+    font-family: "Pathway Gothic One";
+    padding: 5px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 6px;
+    line-height: 150%;
+    text-align: justify;
+    color: #feda4a;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.credits {
+    color: #feda4a;
+    font-size: .8rem;
+    font-weight: 400;
+    a {
+        text-decoration: none;
+        color: #FFF;
+    }
+}
+
+footer {
+    margin-bottom: 5rem;
+}
